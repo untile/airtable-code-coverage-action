@@ -1,0 +1,15 @@
+extends:
+  - uphold
+  - prettier
+
+plugins:
+  - jest
+  - prettier
+  - '@typescript-eslint'
+
+parser: '@typescript-eslint/parser'
+
+rules:
+  jest/no-disabled-tests: 2
+  jest/no-focused-tests: 2
+  prettier/prettier: [error]
