@@ -1,0 +1,46 @@
+name: Test
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install nodule dependencies
+        run: yarn install --production=true
+
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Setup module dependencies cache
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install module dependencies
+        run:  yarn install --frozen-lockfile
+
+      - name: Lint
+        run: yarn lint
+
+      - name: Test
+        run: yarn test
+
+      - name: Build
+        run: yarn build
+
+      - name: Send code coverage to airtable
+        uses: ./
+        with:
+          airtable_base_id: 'appLbaDteXtEGFCaX'
+          airtable_field_name: 'coveragePercentage'
+          airtable_record_id: 'recLahUrhcrBnjKcE'
+          airtable_table_name: 'Repos'
+          airtable_token: ${{ secrets.AIRTABLE_TOKEN }}
