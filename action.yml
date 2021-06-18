@@ -1,0 +1,24 @@
+name: 'Airtable code coverage'
+description: 'Update airtable with code coverage data'
+author: 'Untile'
+
+inputs:
+  AIRTABLE_TOKEN:
+    description: 'Airtable API token'
+    required: true
+  AIRTABLE_BASE_ID:
+    description: 'Airtable base id'
+    required: true
+  AIRTABLE_TABLE_NAME:
+    description: 'Airtable table name'
+    required: true
+  AIRTABLE_RECORD_ID:
+    description: 'Airtable record id'
+    required: true
+  AIRTABLE_FIELD_NAME:
+    description: 'Airtable field name'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
