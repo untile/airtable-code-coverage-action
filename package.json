@@ -26,7 +26,7 @@
     "lint": "eslint . --ext ts",
     "lint-staged": "lint-staged",
     "test": "jest",
-    "version": "npm run build && npm run changelog && git add -A CHANGELOG.md"
+    "version": "npm run build && npm run changelog && git add -A CHANGELOG.md dist"
   },
   "pre-commit": [
     "lint-staged"
