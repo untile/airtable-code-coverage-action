@@ -1,6 +1,10 @@
-name: 'Airtable code coverage'
-description: 'Update airtable with code coverage data'
 author: 'Untile'
+description: 'Update airtable with code coverage data'
+name: 'Airtable code coverage'
+
+branding:
+  icon: 'check'  
+  color: 'gray-dark'
 
 inputs:
   AIRTABLE_TOKEN:
