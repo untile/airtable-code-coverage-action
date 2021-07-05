@@ -7,19 +7,19 @@ branding:
   color: 'gray-dark'
 
 inputs:
-  AIRTABLE_TOKEN:
+  airtable_token:
     description: 'Airtable API token'
     required: true
-  AIRTABLE_BASE_ID:
+  airtable_base_id:
     description: 'Airtable base id'
     required: true
-  AIRTABLE_TABLE_NAME:
+  airtable_table_name:
     description: 'Airtable table name'
     required: true
-  AIRTABLE_RECORD_ID:
+  airtable_record_id:
     description: 'Airtable record id'
     required: true
-  AIRTABLE_FIELD_NAME:
+  airtable_field_name:
     description: 'Airtable field name'
     required: true
 
