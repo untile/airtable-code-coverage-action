@@ -1,6 +1,6 @@
 {
   "name": "@untile/airtable-code-coverage-action",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Update airtable with code coverage data",
   "keywords": [
     "airtable",

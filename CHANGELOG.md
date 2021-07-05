@@ -1,5 +1,8 @@
 # Changelog
 
+## [v1.0.0](https://github.com/untile/airtable-code-coverage-action/releases/tag/v1.0.0) (2021-07-05)
+- Update inputs [\#4](https://github.com/untile/airtable-code-coverage-action/pull/4) ([abelsoares](https://github.com/abelsoares))
+
 ## [v0.0.3](https://github.com/untile/airtable-code-coverage-action/releases/tag/v0.0.3) (2021-07-02)
 - Update version script to add dist folder [\#3](https://github.com/untile/airtable-code-coverage-action/pull/3) ([abelsoares](https://github.com/abelsoares))
 
