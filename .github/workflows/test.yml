@@ -14,9 +14,9 @@ jobs:
         run: yarn install --production=true
 
       - name: Setup node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Setup module dependencies cache
         uses: actions/cache@v2
@@ -41,6 +41,6 @@ jobs:
         with:
           airtable_base_id: 'appLbaDteXtEGFCaX'
           airtable_field_name: 'coveragePercentage'
-          airtable_record_id: 'recLahUrhcrBnjKcE'
+          airtable_record_id: 'recE6Toisu1GLrg5T'
           airtable_table_name: 'Repos'
           airtable_token: ${{ secrets.AIRTABLE_TOKEN }}

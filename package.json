@@ -91,6 +91,6 @@
     "yarn-deduplicate": "^3.1.0"
   },
   "engines": {
-    "node": ">=12.x.x"
+    "node": ">=16.x.x"
   }
 }

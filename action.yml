@@ -3,7 +3,7 @@ description: 'Update airtable with code coverage data'
 name: 'Airtable code coverage'
 
 branding:
-  icon: 'check'  
+  icon: 'check'
   color: 'gray-dark'
 
 inputs:
@@ -24,5 +24,5 @@ inputs:
     required: true
 
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
